@@ -30,10 +30,20 @@ function creatDeck(rankCard, suiteCard) {
       deck.push(creatCard(rank, suite));
     });
   });
+  return deck;
 }
 
+function shuffle (deck){
+  for (let round = 0; round < 1000; round++) {
+    const idx1 = Math.floor(Math.random() * deck.length);
+    let idx2 = Math.floor(Math.random() * deck.length);
+    while (idx1 === idx2) {
+      idx2 = Math.floor(Math.random() * deck.length);
+    }
+    [deck[idx2], deck[idx1]] = [deck[idx1], deck[idx2]];
+  }
+  return deck;
+};
 
-
-
-creatDeck(rankCard, suiteCard);
-console.log(deck)
+shuffle(creatDeck(rankCard, suiteCard));
+console.log(deck);
