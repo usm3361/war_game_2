@@ -1,0 +1,2 @@
+import input from "analiza-sync";
+

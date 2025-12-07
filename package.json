@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/usm3361/war_game_2/issues"
   },
-  "homepage": "https://github.com/usm3361/war_game_2#readme"
+  "homepage": "https://github.com/usm3361/war_game_2#readme",
+  "dependencies": {
+    "analiza-sync": "^1.0.1"
+  }
 }
