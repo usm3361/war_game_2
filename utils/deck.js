@@ -45,5 +45,4 @@ function shuffle (deck){
   return deck;
 };
 
-shuffle(creatDeck(rankCard, suiteCard));
-console.log(deck);
+export default {creatCard, creatDeck, shuffle}
